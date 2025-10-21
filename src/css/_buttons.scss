@@ -1,0 +1,546 @@
+@use "colors" as *;
+@use "typograph" as *;
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.bt1:hover rect {
+  cursor: pointer;
+  fill: white;
+
+}
+
+.bt1:hover path {
+  fill: $laranja;
+
+}
+
+.bt2:hover {
+  cursor: pointer;
+
+}
+
+.bt2:hover rect {
+  fill: $laranja;
+
+}
+
+.bt2:hover text {
+  fill: $branco;
+
+}
+
+.bt2:hover path {
+  fill: $branco;
+
+}
+
+.bt4:hover {
+  cursor: pointer;
+
+}
+
+.bt4:hover rect {
+  fill: #FEE2CD;
+
+}
+
+.bt4:hover text {
+  fill: $laranja;
+
+}
+
+.bt4:hover path {
+  fill: $laranja;
+
+}
+
+
+.bt {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-family: $oxigenRegular;
+
+  &--laranja {
+    cursor: pointer;
+    background-color: $laranja;
+    color: $white;
+  }
+
+  &--laranja:hover {
+    // background-color: $verde;
+    // color: $white;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &--azulescuro {
+    cursor: pointer;
+    background-color: $azulescuro;
+    color: $white;
+  }
+
+  &--azulescuro:hover {
+    // background-color: $verde;
+    // color: $white;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &--leiamais {
+    background-color: $laranja;
+    border-radius: 10px;
+    color: $white;
+    padding: 0.5rem 2rem;
+    min-width: 140px;
+    text-align: center;
+    font-family: $oxigenRegular;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+
+  }
+
+  &--leiamais:hover {
+
+    color: $laranja !important;
+    text-align: center;
+    font-family: $oxigenRegular;
+
+    background-color: #FCCAA4;
+
+  }
+
+  &--leiamais2 {
+    background-color: $white;
+    border-radius: 10px;
+    color: $laranja;
+    padding: 0.5rem 2rem;
+    min-width: 140px;
+    text-align: center;
+    font-family: $oxigenRegular;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    border: 2px solid $laranja;
+  }
+
+  &--leiamais2:hover {
+    // transform: scale(1.03);
+    color: $white !important;
+    text-align: center;
+    font-family: $oxigenRegular;
+    background-color: $laranja;
+    border: 2px solid white;
+
+
+  }
+}
+
+.btnDownload {
+  color: $laranja;
+  // width: 140px;
+  height: 40px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenRegular;
+  border: 1px solid $white;
+  border-radius: 40px;
+  padding: 0 20px;
+
+  &:hover {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $verde;
+    font-weight: bold;
+  }
+}
+
+.btnDownloadLer {
+  color: $white;
+  background-color: $laranja;
+  // width: 140px;
+  min-height: 90px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenBold;
+  border: 2px solid $white;
+  border-radius: 20px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1rem;
+
+  p {
+    color: $white;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    border: 2px solid $laranja;
+    background-color: $white;
+
+    svg path {
+      fill: $laranja;
+    }
+
+    p {
+      color: $laranja;
+    }
+  }
+
+
+
+  // fill padrão do SVG
+  svg path {
+    fill: $white;
+    transition: fill 0.3s ease;
+  }
+
+}
+
+.btnDownloadLerw {
+  color: $laranja;
+  background-color: $white;
+  // width: 140px;
+  min-height: 90px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenBold;
+  border: 2px solid $laranja;
+  border-radius: 20px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1rem;
+
+  p {
+    color: $laranja !important;
+    margin-left: 10px;
+  }
+
+
+
+  &:hover {
+    border: 2px solid $white;
+    background-color: $laranja;
+
+    svg path {
+      fill: $white;
+    }
+
+    p {
+      color: $white !important;
+    }
+  }
+
+
+
+  // fill padrão do SVG
+  svg path {
+
+    transition: fill 0.3s ease;
+  }
+
+}
+
+.btnDownloadLerwb {
+  color: $laranja;
+  background-color: $white;
+  width: 100%;
+  min-height: 90px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenBold;
+  border: 2px solid $laranja;
+  border-radius: 20px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1rem;
+
+  p {
+    color: #414042 !important;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+
+
+  &:hover {
+    border: 2px solid $white;
+    background-color: $laranja;
+
+    svg path {
+      fill: $white;
+    }
+
+    p {
+      color: $white !important;
+    }
+  }
+
+
+
+  // fill padrão do SVG
+  svg path {
+
+    transition: fill 0.3s ease;
+  }
+
+}
+
+.buttons_linguage .btnDownload {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.buttons_linguage .active {
+  // background-color: #1ab2ae;
+  color: $verde;
+}
+
+.btnDownloadF {
+  border: 1px solid white;
+  border-radius: 40px;
+  color: $white;
+  width: 200px;
+  height: 40px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenRegular;
+
+  &:hover {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $verde;
+  }
+}
+
+.btnAcess {
+  border: 1px solid $white;
+  border-radius: 20px;
+  color: $laranja;
+  font-family: $oxigenRegular;
+  font-size: 20px;
+  background-color: $white;
+  padding: 10px 20px;
+  // min-width: 400px;
+  text-align: center;
+}
+
+.btnAcess2 {
+  border: 1px solid $verdemedio;
+  border-radius: 20px;
+  color: $laranja;
+  font-family: $oxigenRegular;
+  font-size: 20px;
+  background-color: $verdemedio;
+  padding: 10px 20px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.btnAcess2:hover {
+  font-family: $oxigenRegular;
+}
+
+.btnAcess:hover {
+  font-family: $oxigenRegular;
+}
+
+button.ler {
+  border: 1px solid $laranja;
+  color: $laranja;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+button.ler:hover {
+  background-color: $laranja;
+  color: $white !important;
+}
+
+a.btnDownload5 {
+  color: $laranja !important;
+  // width: 140px;
+  height: 40px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: $oxigenRegular;
+  border: 1px solid $white;
+  border-radius: 40px;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: $white;
+    color: $verde;
+    font-weight: bold;
+  }
+}
+
+.dropdown {
+  border: 1px solid $salmao;
+  border-radius: 50px;
+}
+
+.dropdown a {
+  color: $laranja !important;
+  font-family: $oxigenRegular;
+}
+
+.dropdown a:hover {
+  color: $laranja !important;
+  font-family: $oxigenRegular;
+}
+
+.dropdown-item {
+  display: block;
+  width: 80px !important;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  /* clear: both; */
+  /* font-weight: 400; */
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $white;
+  border: 1px solid #fff;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+.dropdown-menu {
+  background-color: $white !important;
+  border: 0;
+}
+
+.dropdown-item {
+  border: 1px solid $white !important;
+  border-radius: 5px !important;
+  margin: 10px 0;
+  background-color: $laranja !important;
+}
+
+.dropdown-item:hover {
+  background-color: $white !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: $white !important;
+  background-color: $white !important;
+}
+
+ul.dropdown-menu {
+  border: none;
+}
+
+// #change-language-pt {
+//   background-color: #eff4ef;
+//   padding: 6px 15px;
+//   border-radius: 150px;
+//   text-align: center;
+//   font-weight: 800;
+//   color: #00a1fc;
+// }
+
+// #change-language-en {
+//   border: 1px solid #eff4ef;
+//   padding: 6px 15px;
+//   border-radius: 150px;
+//   text-align: center;
+//   color: #eff4ef;
+//   font-weight: 800;
+// }
+header {
+  .navbar {
+    .langButtons {
+      span {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// .dropdown {
+//   border: 1px solid $salmao;
+//   border-radius: 10px;
+// }
+// .dropdown a {
+//   color: $laranja !important;
+//   font-family: $oxigenRegular;
+// }
+// .dropdown a:hover {
+//   color: $white !important;
+//   font-family: $oxigenRegular;
+//   background-color: $laranja !important;
+//   border: 1px solid $white !important;
+// }
+.dropdown-item {
+  display: block;
+  width: 80px !important;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  /* clear: both; */
+  /* font-weight: 400; */
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+.dropdown-menu {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.dropdown-item {
+  border: 1px solid $salmao !important;
+  border-radius: 20px !important;
+  margin: 0;
+  background-color: $cinza2 !important;
+}
+
+.dropdown-item:hover {
+  background-color: $white !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: $white !important;
+  background-color: $white !important;
+}
+
+ul.dropdown-menu {
+  border: none;
+}
+
+@media (max-width: 768px) {}

@@ -1,0 +1,266 @@
+@use "colors" as *;
+
+@font-face {
+  font-family: 'Oxygen-Bold';
+  src: url('../fonts/Oxygen-Bold.woff2') format('woff2'),
+    url('../fonts/Oxygen-Bold.woff') format('woff'),
+    url('../fonts/Oxygen-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oxygen-Regular';
+  src: url('../fonts/Oxygen-Regular.woff2') format('woff2'),
+    url('../fonts/Oxygen-Regular.woff') format('woff'),
+    url('../fonts/Oxygen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oxygen-Light';
+  src: url('../fonts/Oxygen-Light.woff2') format('woff2'),
+    url('../fonts/Oxygen-Light.woff') format('woff'),
+    url('../fonts/Oxygen-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Font Styles
+$oxigenBold: "Oxygen-Bold", sans-serif;
+$oxigenRegular: "Oxygen-Regular", sans-serif;
+$oxigenLight: "Oxygen-Light", sans-serif;
+
+
+// i {
+//   font-family: $oxigenRegularItalic !important;
+// }
+
+// Elimina as ligaturas da fonte
+body {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: $oxigenRegular;
+  font-size: 18px;
+  color: $cinza !important;
+
+}
+
+html {
+  font-size: 18px;
+  color: $cinza !important;
+
+}
+
+div {
+  font-family: $oxigenRegular;
+  font-size: 18px;
+  color: $cinza !important;
+}
+
+//Variables
+.txt {
+  //Family
+  font-family: $oxigenRegular;
+}
+
+.cor {
+  &--azulescuro {
+    color: $azulescuro !important;
+  }
+
+  &--black {
+    color: $black !important;
+  }
+
+  &--laranja {
+    color: $laranja !important;
+  }
+
+  &--branco {
+    color: $white !important;
+  }
+
+  &--branco p {
+    color: $white !important;
+  }
+
+  &--transparente {
+    color: $transparente !important;
+  }
+
+  &--cinza {
+    color: $cinza !important;
+  }
+
+  &--azul {
+    color: $azul !important;
+  }
+
+  &--salmao {
+    color: $salmao !important;
+  }
+
+  &--roxa {
+    color: $roxa !important;
+  }
+}
+
+footer a {
+  color: $azul !important;
+}
+
+//Font sizes
+h1 {
+  font-size: 55px !important;
+  font-family: $oxigenRegular;
+
+
+}
+
+h2 {
+  font-size: 55px !important;
+  font-family: $oxigenBold;
+  color: $white !important;
+}
+
+h3 {
+  font-size: 25px !important;
+  font-family: $oxigenBold;
+
+}
+
+h4 {
+  font-size: 25px !important;
+  font-family: $oxigenLight;
+  margin-bottom: 0 !important;
+}
+
+h5 {
+  font-size: 30px !important;
+  font-family: $oxigenBold;
+
+}
+
+h6 {
+  font-size: 55px !important;
+  font-family: $oxigenBold;
+  margin-bottom: 0 !important;
+
+}
+
+h7 {
+  font-size: 35px !important;
+  font-family: $oxigenBold;
+  margin-bottom: 0 !important;
+
+}
+
+p {
+  font-size: 18px !important;
+  font-family: $oxigenRegular;
+  color: $cinza;
+}
+
+b,
+.bold {
+  font-family: $oxigenBold;
+}
+
+li {
+  font-family: $oxigenRegular;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@for $i from 1 through 100 {
+  .fs--#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: calc(55px * 1) !important;
+  }
+
+  h2 {
+    font-size: (55px * 1) !important;
+  }
+
+  h3 {
+    font-size: (25px * 1) !important;
+  }
+
+  h4 {
+    font-size: (25px * 1) !important;
+  }
+
+  h5 {
+    font-size: (30px * 1) !important;
+  }
+
+  h6 {
+    font-size: (55px * 1) !important;
+  }
+
+}
+
+p {
+  font-size: (18px * 1) !important;
+}
+
+div {
+  font-size: (18px * 1) !important;
+}
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(55px * .8) !important;
+  }
+
+  h2 {
+    font-size: (55px * 1) !important;
+  }
+
+  h3 {
+    font-size: (25px * 1) !important;
+  }
+
+  h4 {
+    font-size: (25px * .8) !important;
+  }
+
+  h5 {
+    font-size: (30px * .8) !important;
+  }
+
+  h6 {
+    font-size: (55px * .8) !important;
+  }
+
+  h7 {
+    font-size: (35px * .8) !important;
+  }
+
+  p {
+    font-size: (18px * 1) !important;
+  }
+
+  div {
+    font-size: (18px * 1) !important;
+  }
+
+
+  @for $i from 1 through 100 {
+    .fs--#{$i} {
+      font-size: calc(#{$i}px * 0.8);
+    }
+  }
+}

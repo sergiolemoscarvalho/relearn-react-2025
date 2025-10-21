@@ -1,0 +1,201 @@
+@use "colors" as *;
+@use "typograph" as *;
+
+.bg {
+  &--white {
+    background-color: $white;
+  }
+
+  &--laranja2 {
+    background-color: #F58436;
+  }
+
+  &--educacao {
+    background: linear-gradient(to right, #55489d, #f37053);
+  }
+
+  &--b {
+    background: url(../images/bg-b.png) right top no-repeat;
+    // background-size: cover;
+    min-height: 878px;
+  }
+
+  &--basefolha {
+    background: url(../images/base-folha.png) $cinza2 left bottom no-repeat;
+  }
+
+  &--doctor {
+    background: url(../images/happy-doctor.png) bottom right no-repeat;
+    min-height: 600px;
+  }
+
+  &--energia {
+    background: url(../images/bg-energia.jpg) top left no-repeat;
+    background-size: cover;
+    min-height: 280px;
+  }
+
+
+
+  &--res {
+    background: url(../images/bg-final.png) bottom center no-repeat;
+    background-size: 100%;
+    // min-height: 900px;
+  }
+
+  &--car1 {
+    background-color: $azulescuro;
+  }
+
+  &--car2 {
+    background-color: $laranja;
+  }
+
+  &--car3 {
+    background-color: $amarelo;
+  }
+
+  &--laranja {
+    background-color: $laranjaclaro;
+  }
+
+  &--roxo {
+    background-color: $roxa;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  &--footer {
+    background-color: $laranja;
+    background-size: cover;
+  }
+
+  &--nav {
+    min-height: 74px;
+  }
+
+  &--header {
+    padding-top: 0px;
+  }
+
+  &--1 {
+    min-height: 277px;
+    width: 5px;
+  }
+
+  &--2 {
+    background: url(../images/meio.png) left top repeat-x;
+    min-height: 277px;
+  }
+
+  &--3 {
+    min-height: 277px;
+    width: 78px;
+  }
+
+  &--barra {
+    background: #133678 url(../images/barra.png) right center no-repeat;
+    min-height: 228px;
+  }
+
+  &--lateral {
+    background: url(../images/bg-lateral.png) left top no-repeat;
+  }
+
+  &--flutuante {
+    position: relative;
+
+    &--1 img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &--destaques {
+    background: $laranja url(../images/bg-destaques.svg) center top no-repeat;
+    min-height: 160px;
+    background-size: cover;
+
+  }
+}
+
+#destaques2024 {
+  background-color: $azulescuro;
+}
+
+@media (max-width: 1366px) {
+
+  // .bg {
+  //   &--header {
+  //     // background: url(../images/svg2/home.svg) left top no-repeat;
+  //     background-size: inherit;
+  //   }
+  // }
+  .bg {
+    &--boxespecial-3 p {
+      color: white !important;
+      margin: 0 10px;
+    }
+
+    &--boxespecial-3 h6 {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    &--nav {
+      background: url(../images/bg-nav.svg) right top no-repeat;
+      min-height: 50px;
+      background-size: cover;
+      margin-right: 200px;
+    }
+
+    &--2 {
+      background: #00335c;
+      // min-height: 277px;
+      background-size: cover;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+    }
+
+    &--b {
+      background: url(../images/bg-b.png) right bottom no-repeat;
+      background-size: contain;
+      // min-height: 878px;
+    }
+
+    &--barra {
+      background: #133678 url(../images/barra.png) left center no-repeat;
+      min-height: 228px;
+    }
+
+    &--doctor {
+      background: none;
+      min-height: 600px;
+    }
+
+
+  }
+}
+
+@media (min-width: 1140px) {
+  .bg {
+
+
+    &--destaques {
+      background: $laranja url(../images/bg-destaques.svg) center top no-repeat;
+      min-height: 220px;
+      background-size: cover;
+
+    }
+
+    &--energia {
+      background: url(../images/bg-energia.jpg) top left no-repeat;
+      background-size: cover;
+      min-height: 380px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@use "colors" as *;
+@use "typograph" as *;
+
+.swiper {
+  z-index: 1;
+  height: fit-content;
+}
+
+.swiper-slide {
+  // background-color: $roxa;
+  width: 100%;
+  // height: 237px;
+
+  & div {
+    padding: 20px 63px 46px 63px;
+  }
+
+  & p {
+    font-weight: 100;
+    font-size: 18px;
+  }
+}
+
+.swiper-wrapper {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $branco;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+
+  &::after {
+    content: "" !important;
+  }
+}
+
+.swiper-button-next {
+  background-image: url("../images/right-arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // background-color: $salmao;
+  border-radius: 50%;
+  padding: 27px;
+  right: 0px;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-button-prev {
+  background-image: url("../images/left-arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // background-color: $salmao;
+  border-radius: 50%;
+  padding: 27px;
+  left: 0px;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  bottom: -100px;
+}
+.swiper-pagination-bullet {
+  width: 80px !important; /* Largura desejada */
+  height: 24px !important; /* Altura (mantenha proporcional) */
+  border-radius: 0px !important; /* Metade da altura */
+  background: $salmao !important;
+  transition: all 0.3s ease !important;
+  opacity: 1;
+  &-active {
+    background: $roxa !important;
+  }
+}
+.swiper-pagination-bullet:first-child {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.swiper-pagination-bullet:last-child {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+/* Espaçamento entre bullets */
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 2px !important;
+  }
+}
+@media screen and (min-width: 1367px) {
+  .swiper-button-next {
+    background-image: url("../images/right-arrow-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // background-color: $salmao;
+    border-radius: 50%;
+    padding: 27px;
+    right: 0px;
+    opacity: 0.8;
+    right: -60px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .swiper-button-prev {
+    background-image: url("../images/left-arrow-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // background-color: $salmao;
+    border-radius: 50%;
+    padding: 27px;
+    left: 0px;
+    opacity: 0.8;
+    left: -60px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title id="title">Relatório de Sustentabilidade 2024</title>
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="Relatório de Sustentabilidade 2024" />
+    <meta property="og:description" content="Relatório de Sustentabilidade 2024" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="https://tecnogera.com.br/wp-content/uploads/2025/06/cropped-Color4-32x32.webp" sizes="32x32">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="./src/fonts-6/css/all.css" rel="stylesheet" />
+    <link href="./src/fonts-6/css/fontawesome.css" rel="stylesheet" />
+    <link href="./src/fonts-6/css/brands.css" rel="stylesheet" />
+    <link href="./src/fonts-6/css/solid.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+   
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <!-- <script src="./assets/js/resources.js"></script> -->
+    <!--AOS: Animate Lib-->
+    <script>
+      AOS.init({
+        disable: "mobile",
+        startEvent: "load",
+        duration: 500, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: true
+      });
+    </script>
+
+    <!--Userway-->
+    <script>
+      (function (d) {
+        var s = d.createElement("script");
+        s.setAttribute("data-position", 3);
+        s.setAttribute("data-language", "pt");
+        s.setAttribute("data-account", "oSrNl8Iy2B");
+        s.setAttribute("src", "https://cdn.userway.org/widget.js");
+        (d.body || d.head).appendChild(s);
+      })(document);
+    </script>
+    <script>
+      function equalizeCardHeights() {
+        // 1. Seleciona os grupos de cards
+        const cardGroups = [
+          document.querySelectorAll(".box--lar"),
+          document.querySelectorAll(".box--vc--verde"),
+          document.querySelectorAll(".box--vc--amarelo"),
+          document.querySelectorAll(".r1"),
+          document.querySelectorAll(".r2"),
+          document.querySelectorAll(".boxlll3"),
+          document.querySelectorAll(".boxbranco"),
+          document.querySelectorAll(".box--alca")
+        ];
+
+        // 2. Para cada grupo, calcula e aplica sua própria altura máxima
+        cardGroups.forEach((group) => {
+          if (group.length === 0) return; // Se não houver cards, pula
+
+          // Reseta alturas
+          group.forEach((card) => {
+            card.style.height = "auto";
+          });
+
+          // Encontra a maior altura do grupo atual
+          let maxHeight = 0;
+          group.forEach((card) => {
+            maxHeight = Math.max(maxHeight, card.offsetHeight);
+          });
+
+          // Aplica a altura máxima apenas a esse grupo
+          group.forEach((card) => {
+            card.style.height = maxHeight + "px";
+          });
+        });
+      }
+
+      // Chame a função quando a página carregar e quando a janela for redimensionada
+      window.addEventListener("load", equalizeCardHeights);
+      window.addEventListener("resize", equalizeCardHeights);
+    </script>
+  </body>
+</html>
